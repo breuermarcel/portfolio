@@ -4,6 +4,7 @@ import Timeline from './components/timeline';
 import TimelineItem from './components/timeline-item';
 import Headline from './components/headline';
 import Footer from './components/footer';
+import { lazy } from 'react';
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
             IT-Manager & Prokurist
           </p>
           <div className="-mx-5 mt-10 lg:-mx-16">
-            <Image src="/assets/marcel-breuer-black-and-white.png" className="inline-block lg:rounded-sm print:hidden" alt="Marcel Breuer" width={550} height={350} />
+            <Image src="/assets/marcel-breuer-bw.png" className="inline-block lg:rounded-sm print:hidden" alt="Marcel Breuer" sizes="(max-width: 768px) 100vw, 35vw" quality={75} width={500} height={350} />
           </div>
           <p className="mt-10 text-balance leading-relaxed text-gray-700 dark:text-gray-300">
             {/* DESCRIPTION */}
