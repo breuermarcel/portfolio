@@ -2,7 +2,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 
 export const metadata = {
-  title: "Marcel Breuer",
+  title: "Marcel Breuer | Curriculum Vitae",
   description: "IT-Manager, Business Intelligence Expert, Data Scientist",
 };
 
