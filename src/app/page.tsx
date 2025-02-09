@@ -4,7 +4,6 @@ import Timeline from './components/timeline';
 import TimelineItem from './components/timeline-item';
 import Headline from './components/headline';
 import Footer from './components/footer';
-import { lazy } from 'react';
 
 export default function Home() {
   return (
@@ -12,19 +11,19 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-12">
 
         <div className="bg-gray-100 p-5 text-left dark:bg-gray-900 md:col-span-4 lg:p-14">
-          <h1 className="leading-tighter mt-5 text-4xl font-extrabold lg:text-6xl">
+          <h1 className="leading-tighter mt-5 text-4xl font-extrabold lg:text-6xl print:text-2xl">
             Marcel Breuer
           </h1>
-          <p className="mt-3 text-xl text-green-600 dark:text-green-500">
+          <p className="mt-3 text-xl text-green-600 dark:text-green-500 print:hidden">
             IT-Manager & Prokurist
           </p>
-          <div className="-mx-5 mt-10 lg:-mx-16">
+          <div className="-mx-5 mt-10 lg:-mx-16 print:hidden">
             <Image src="/assets/marcel-breuer-bw.png" className="inline-block lg:rounded-sm print:hidden" alt="Marcel Breuer" sizes="(max-width: 768px) 100vw, 35vw" quality={75} width={500} height={350} />
           </div>
-          <p className="mt-10 text-balance leading-relaxed text-gray-700 dark:text-gray-300">
+          <p className="mt-10 text-balance leading-relaxed text-gray-700 dark:text-gray-300 print:hidden">
             {/* DESCRIPTION */}
           </p>
-          <div className="mt-10 space-y-5">
+          <div className="mt-10 space-y-5 print:d-flex print:hidden">
             <div className="flex items-center gap-5">
               <FaAddressCard className="size-6 text-black dark:text-white" />
               <span className="truncate font-medium">Solingen, DE</span>
@@ -44,7 +43,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mx-auto max-w-2xl space-y-16 p-5 md:col-span-8 md:p-10">
+        <div className="mx-auto max-w-2xl space-y-8 p-5 md:col-span-8 md:p-10 print:max-w-max">
           <section>
             <Headline>Berufliche Tätigkeit</Headline>
             <Timeline>
@@ -72,10 +71,10 @@ export default function Home() {
               </TimelineItem>
               <TimelineItem heading={'09.2019 - 10.2024'} subheading={'B.A. Business Administration, International School of Management, Köln'}>
                 Schwerpunkte: Internationale Rechnungslegung, Controlling und Unternehmensführung<br />
-                Thesis: „Einfluss von KI-gestützten Anwendungen bei Veränderungsprozessen in Unternehmen“
+                Thesis: <i>„Einfluss von KI-gestützten Anwendungen bei Veränderungsprozessen in Unternehmen“</i>
               </TimelineItem>
               <TimelineItem heading={'09.2018 - 06.2021'} subheading={'Fachinformatiker für Anwendungsentwicklung, Georg-Simon-Ohm Berufskolleg, Köln'}>
-
+                Ausbildung zum Fachinformatiker für Anwendungsentwicklung
               </TimelineItem>
             </Timeline>
           </section>
@@ -84,8 +83,8 @@ export default function Home() {
             <Headline>Qualifikationen</Headline>
             <Timeline>
               <TimelineItem heading={'Sprachen'}>
-                - Deutsch (Muttersprache)<br />
-                - Englisch (fließend)
+                - Deutsch (C2)<br />
+                - Englisch (C1)
               </TimelineItem>
               <TimelineItem heading={'Zertifikate'}>
                 - Professional Scrum Master I

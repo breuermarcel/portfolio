@@ -1,16 +1,19 @@
 import "./globals.css";
+import { ReactNode } from "react";
 
 export const metadata = {
   title: "Marcel Breuer",
   description: "IT-Manager, Business Intelligence Expert, Data Scientist",
 };
 
-export default function RootLayout({ children }) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="de">
-      <body
-        className={`antialiased`}
-      >
+      <body className={`antialiased`}>
         {children}
       </body>
     </html>

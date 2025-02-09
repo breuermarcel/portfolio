@@ -1,10 +1,16 @@
-export default function TimelineItem({ heading, subheading, children }) {
+interface TimelineItemProps {
+    heading?: string;
+    subheading?: string;
+    children?: React.ReactNode;
+}
+
+export default function TimelineItem({ heading, subheading, children }: TimelineItemProps) {
     if (!heading && !subheading && !children) {
         return null;
     }
 
     return (
-        <li className="before:border-1 relative before:absolute before:-left-[1.875rem] before:top-6 before:block before:size-4 before:rounded-full before:border-2 before:border-green-200/75 before:bg-white before:content-[''] dark:before:border-green-800/75 dark:before:bg-gray-950">
+        <li className="before:border-1 pt-[1.35rem] relative before:absolute before:-left-[1.875rem] before:top-6 before:block before:size-4 before:rounded-full before:border-2 before:border-green-200/75 before:bg-white before:content-[''] dark:before:border-green-800/75 dark:before:bg-gray-950">
             {heading && (
                 <p className="text-sm font-semibold text-green-600 dark:text-green-500">
                     {heading}
@@ -12,7 +18,7 @@ export default function TimelineItem({ heading, subheading, children }) {
             )}
 
             {subheading && (
-                <p className="mb-2 font-bold">
+                <p className="font-bold">
                     {subheading}
                 </p>
             )}
