@@ -12,21 +12,21 @@ export default function TimelineItem({ heading, subheading, children }: Timeline
     return (
         <li className="before:block before:top-6 before:-left-[1.875rem] before:absolute relative before:bg-white dark:before:bg-gray-950 pt-[1.35rem] before:border-1 before:border-2 before:border-green-200/75 dark:before:border-green-800/75 before:rounded-full before:size-4 before:content-['']">
             {heading && (
-                <p className="font-semibold text-green-600 dark:text-green-500 text-sm">
+                <h3 className="font-semibold text-green-600 dark:text-green-500 text-sm">
                     {heading}
-                </p>
+                </h3>
             )}
 
             {subheading && (
-                <p className="font-bold">
+                <h4 className="font-bold">
                     {subheading}
-                </p>
+                </h4>
             )}
 
             {children && (
-                <p className="text-gray-700 dark:text-gray-300 text-sm/relaxed">
+                <div className="text-gray-700 dark:text-gray-300 text-sm/relaxed">
                     {children}
-                </p>
+                </div>
             )}
         </li>
     );

@@ -20,27 +20,6 @@ export default function Home() {
           <div className="print:hidden -mx-5 lg:-mx-16 mt-10">
             <Image src="/assets/marcel-breuer-bw.png" className="print:hidden inline-block lg:rounded-sm" alt="Marcel Breuer" sizes="(max-width: 768px) 100vw, 35vw" quality={75} width={500} height={350} />
           </div>
-          <p className="print:hidden mt-10 text-gray-700 dark:text-gray-300 text-balance leading-relaxed">
-            {/* DESCRIPTION */}
-          </p>
-          <div className="print:hidden print:d-flex space-y-5 mt-10">
-            <div className="flex items-center gap-5">
-              <FaAddressCard className="size-6 text-black dark:text-white" />
-              <span className="font-medium truncate">Solingen, DE</span>
-            </div>
-            <div className="flex items-center gap-5">
-              <FaPhone className="size-6 text-black dark:text-white" />
-              <a href="javascript:void(0)" className="font-medium text-black hover:text-black/75 dark:hover:text-white/75 dark:text-white underline truncate">
-                info@marcel-breuer.net
-              </a>
-            </div>
-            <div className="flex items-center gap-5">
-              <FaGlobe className="size-6 text-black dark:text-white" />
-              <a className="font-medium text-black hover:text-black/75 dark:hover:text-white/75 dark:text-white underline truncate" href="javascript:void(0)">
-                https://marcel-breuer.net
-              </a>
-            </div>
-          </div>
         </div>
 
         <div className="space-y-8 md:col-span-8 mx-auto p-5 md:p-10 print:max-w-max max-w-2xl">
@@ -48,17 +27,20 @@ export default function Home() {
             <Headline>Berufliche Tätigkeit</Headline>
             <Timeline>
               <TimelineItem heading={'06.2021 - heute'} subheading={'IT-Manager und Prokurist, consulting1x1 GmbH, Leverkusen'}>
-                - Projektleitung und Entwicklung einer B2B-Plattformlösung mit über 25.000 Kunden zur Förderung der Nachhaltigkeit entlang der gesamten Wertschöpfungskette<br />
-                - Verantwortlich für die Leitung funktionsübergreifender Teams <br />
-                - Identifikation, Bewertung und Management von Projektrisiken sowie Einleitung von Eskalationsstufen<br />
-                - Entwicklung einer KPI-gesteuerten Reportinglösung zur Transparenz und Effizienzsteigerung<br />
-                - Enge Zusammenarbeit mit der Geschäftsführung sowie Stakeholdern zur Sicherstellung der Zielerreichung und Strategie
+                <ul className="ms-4 list-disc list-inside">
+                  <li>Projektleitung und Entwicklung einer B2B-Plattformlösung mit über 25.000 Kunden zur Förderung der Nachhaltigkeit entlang der gesamten Wertschöpfungskette</li>
+                  <li>Verantwortlich für die Leitung funktionsübergreifender Teams</li>
+                  <li>Identifikation, Bewertung und Management von Projektrisiken sowie Einleitung von Eskalationsstufen</li>
+                  <li>Entwicklung einer KPI-gesteuerten Reportinglösung zur Transparenz und Effizienzsteigerung</li>
+                  <li>Enge Zusammenarbeit mit der Geschäftsführung sowie Stakeholdern zur Sicherstellung der Zielerreichung und Strategie</li>
+                </ul>
+
               </TimelineItem>
               <TimelineItem heading={'09.2018 - 06.2021'} subheading={'Fachinformatiker für Anwendungsentwicklung, consulting1x1 GmbH, Leverkusen'}>
-                - Fullstack Implementierung von Webapplikationen und individuellen Softwarelösungen unter
-                Einsatz von Python, PHP und TypeScript<br />
-                - Technisches Design und Entwicklung von Backend- und Frontendlösungen unter Verwendung
-                agiler Methoden
+                <ul className="ms-4 list-disc list-inside">
+                  <li>Fullstack Implementierung von Webapplikationen und individuellen Softwarelösungen unter Einsatz von Python, PHP und TypeScript</li>
+                  <li>Technisches Design und Entwicklung von Backend- und Frontendlösungen unter Verwendung agiler Methoden</li>
+                </ul>
               </TimelineItem>
             </Timeline>
           </section>
@@ -83,19 +65,29 @@ export default function Home() {
             <Headline>Qualifikationen</Headline>
             <Timeline>
               <TimelineItem heading={'Sprachen'}>
-                - Deutsch (C2)<br />
-                - Englisch (C1)
+                <ul className="ms-4 list-disc list-inside">
+                  <li>Deutsch (C2)</li>
+                  <li>Englisch (C1)</li>
+                </ul>
               </TimelineItem>
               <TimelineItem heading={'Zertifikate'}>
-                - Professional Scrum Master I
+                <ul className="ms-4 list-disc list-inside">
+                  <li>Professional Scrum Master I</li>
+                </ul>
               </TimelineItem>
               <TimelineItem heading={'Technologien & Tools'}>
-                - Jira, Confluence<br />
-                - Git, Docker
+                <ul className="ms-4 list-disc list-inside">
+                  <li>Jira</li>
+                  <li>Confluence</li>
+                  <li>Git</li>
+                  <li>Docker</li>
+                </ul>
               </TimelineItem>
               <TimelineItem heading={'Programmiersprachen'}>
-                - Python, PHP, TypeScript, SQL<br />
-                - FastAPI, Laravel, NextJS, Angular
+                <ul className="ms-4 list-disc list-inside">
+                  <li>Go, Python, PHP, TypeScript, SQL</li>
+                  <li>FastAPI, Laravel, NextJS, Angular</li>
+                </ul>
               </TimelineItem>
             </Timeline>
           </section>
