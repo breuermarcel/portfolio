@@ -7,43 +7,43 @@ import Footer from './components/footer';
 
 export default function Home() {
   return (
-    <main className="container mx-auto max-w-7xl">
+    <main className="mx-auto max-w-7xl container">
       <div className="grid grid-cols-1 md:grid-cols-12">
 
-        <div className="bg-gray-100 p-5 text-left dark:bg-gray-900 md:col-span-4 lg:p-14">
-          <h1 className="leading-tighter mt-5 text-4xl font-extrabold lg:text-6xl print:text-2xl">
+        <div className="md:col-span-4 bg-gray-100 dark:bg-gray-900 p-5 lg:p-14 text-left">
+          <h1 className="mt-5 font-extrabold print:text-2xl text-4xl lg:text-6xl leading-tighter">
             Marcel Breuer
           </h1>
-          <p className="mt-3 text-xl text-green-600 dark:text-green-500 print:hidden">
+          <p className="print:hidden mt-3 text-green-600 dark:text-green-500 text-xl">
             IT-Manager & Prokurist
           </p>
-          <div className="-mx-5 mt-10 lg:-mx-16 print:hidden">
-            <Image src="/assets/marcel-breuer-bw.png" className="inline-block lg:rounded-sm print:hidden" alt="Marcel Breuer" sizes="(max-width: 768px) 100vw, 35vw" quality={75} width={500} height={350} />
+          <div className="print:hidden -mx-5 lg:-mx-16 mt-10">
+            <Image src="/assets/marcel-breuer-bw.png" className="print:hidden inline-block lg:rounded-sm" alt="Marcel Breuer" sizes="(max-width: 768px) 100vw, 35vw" quality={75} width={500} height={350} />
           </div>
-          <p className="mt-10 text-balance leading-relaxed text-gray-700 dark:text-gray-300 print:hidden">
+          <p className="print:hidden mt-10 text-gray-700 dark:text-gray-300 text-balance leading-relaxed">
             {/* DESCRIPTION */}
           </p>
-          <div className="mt-10 space-y-5 print:d-flex print:hidden">
+          <div className="print:hidden print:d-flex space-y-5 mt-10">
             <div className="flex items-center gap-5">
               <FaAddressCard className="size-6 text-black dark:text-white" />
-              <span className="truncate font-medium">Solingen, DE</span>
+              <span className="font-medium truncate">Solingen, DE</span>
             </div>
             <div className="flex items-center gap-5">
               <FaPhone className="size-6 text-black dark:text-white" />
-              <a href="javascript:void(0)" className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75">
+              <a href="javascript:void(0)" className="font-medium text-black hover:text-black/75 dark:hover:text-white/75 dark:text-white underline truncate">
                 info@marcel-breuer.net
               </a>
             </div>
             <div className="flex items-center gap-5">
               <FaGlobe className="size-6 text-black dark:text-white" />
-              <a className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75" href="javascript:void(0)">
+              <a className="font-medium text-black hover:text-black/75 dark:hover:text-white/75 dark:text-white underline truncate" href="javascript:void(0)">
                 https://marcel-breuer.net
               </a>
             </div>
           </div>
         </div>
 
-        <div className="mx-auto max-w-2xl space-y-8 p-5 md:col-span-8 md:p-10 print:max-w-max">
+        <div className="space-y-8 md:col-span-8 mx-auto p-5 md:p-10 print:max-w-max max-w-2xl">
           <section>
             <Headline>Berufliche Tätigkeit</Headline>
             <Timeline>
@@ -106,14 +106,14 @@ export default function Home() {
             <div className='flex gap-8'>
               <div className='flex gap-2'>
                 <FaLinkedin className="size-6 text-black dark:text-white" />
-                <a href="https://www.linkedin.com/in/m-breuer/" target='_blank' className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75">
+                <a href="https://www.linkedin.com/in/m-breuer/" target='_blank' className="font-medium text-black hover:text-black/75 dark:hover:text-white/75 dark:text-white underline truncate">
                   LinkedIn
                 </a>
               </div>
 
               <div className='flex gap-2'>
                 <FaGithub className="size-6 text-black dark:text-white" />
-                <a href="https://github.com/breuermarcel/" target='_blank' className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75">
+                <a href="https://github.com/breuermarcel/" target='_blank' className="font-medium text-black hover:text-black/75 dark:hover:text-white/75 dark:text-white underline truncate">
                   GitHub
                 </a>
               </div>

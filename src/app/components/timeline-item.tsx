@@ -10,9 +10,9 @@ export default function TimelineItem({ heading, subheading, children }: Timeline
     }
 
     return (
-        <li className="before:border-1 pt-[1.35rem] relative before:absolute before:-left-[1.875rem] before:top-6 before:block before:size-4 before:rounded-full before:border-2 before:border-green-200/75 before:bg-white before:content-[''] dark:before:border-green-800/75 dark:before:bg-gray-950">
+        <li className="before:block before:top-6 before:-left-[1.875rem] before:absolute relative before:bg-white dark:before:bg-gray-950 pt-[1.35rem] before:border-1 before:border-2 before:border-green-200/75 dark:before:border-green-800/75 before:rounded-full before:size-4 before:content-['']">
             {heading && (
-                <p className="text-sm font-semibold text-green-600 dark:text-green-500">
+                <p className="font-semibold text-green-600 dark:text-green-500 text-sm">
                     {heading}
                 </p>
             )}
@@ -24,7 +24,7 @@ export default function TimelineItem({ heading, subheading, children }: Timeline
             )}
 
             {children && (
-                <p className="text-sm/relaxed text-gray-700 dark:text-gray-300">
+                <p className="text-gray-700 dark:text-gray-300 text-sm/relaxed">
                     {children}
                 </p>
             )}

@@ -6,8 +6,8 @@ interface HeadlineProps {
 
 export default function Headline({ children }: HeadlineProps) {
     return (
-        <div className="mb-4 border-b-4 border-gray-100 py-2.5 dark:border-gray-900">
-            <h1 className="text-xl font-medium">
+        <div className="mb-4 py-2.5 border-gray-100 dark:border-gray-900 border-b-4">
+            <h1 className="font-medium text-xl">
                 {children}
             </h1>
         </div>
