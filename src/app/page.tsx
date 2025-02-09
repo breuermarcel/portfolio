@@ -7,7 +7,7 @@ import Footer from './components/footer';
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-7xl container">
+    <main className="mx-auto max-w-8xl container">
       <div className="grid grid-cols-1 md:grid-cols-12">
 
         <div className="md:col-span-4 bg-gray-100 dark:bg-gray-900 p-5 lg:p-14 text-left">
@@ -17,8 +17,11 @@ export default function Home() {
           <p className="print:hidden mt-3 text-green-600 dark:text-green-500 text-xl">
             IT-Manager & Prokurist
           </p>
-          <div className="print:hidden -mx-5 lg:-mx-16 mt-10">
+          <div className="print:hidden -mx-5 lg:-mx-16 mt-10 mb-6">
             <Image src="/assets/marcel-breuer-bw.png" className="print:hidden inline-block lg:rounded-sm" alt="Marcel Breuer" sizes="(max-width: 768px) 100vw, 35vw" quality={75} width={500} height={350} />
+          </div>
+          <div className="print:hidden">
+            &copy; Marcel Breuer {new Date().getFullYear()}
           </div>
         </div>
 
