@@ -18,7 +18,7 @@ export default function Home() {
             IT-Manager & Prokurist
           </p>
           <div className="print:hidden -mx-5 lg:-mx-16 mt-10 mb-6">
-            <Image src="/assets/marcel-breuer-bw.png" className="print:hidden inline-block lg:rounded-sm" alt="Marcel Breuer" sizes="(max-width: 768px) 100vw, 35vw" quality={75} width={500} height={350} />
+            <Image src="/assets/marcel-breuer-bw.png" className="print:hidden inline-block lg:rounded-sm" alt="Marcel Breuer" sizes="(max-width: 768px) 100vw, 35vw" quality={75} width={800} height={350} />
           </div>
           <div className="print:hidden">
             &copy; Marcel Breuer {new Date().getFullYear()}
