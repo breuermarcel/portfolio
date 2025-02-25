@@ -1,11 +1,13 @@
 services:
   app:
+    container_name: docker-portfolio
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: docker-portfolio
+    restart: always
     ports:
       - '3000:3000'
     volumes:
       - .:/app
       - /app/node_modules
+      - /app/.next
