@@ -8,9 +8,6 @@ module.exports = {
                 userAgent: '*',
                 disallow: '/',
             },
-        ],
-        additionalSitemaps: [
-            'https://cv.marcel-breuer.net/sitemap.xml',
-        ],
+        ]
     },
 };
