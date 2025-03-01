@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaAddressCard, FaGithub, FaGlobe, FaLinkedin, FaPhone, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Timeline from './components/timeline';
 import TimelineItem from './components/timeline-item';
 import Headline from './components/headline';
