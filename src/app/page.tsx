@@ -54,7 +54,7 @@ export default function Home() {
               <TimelineItem heading={'09.2024 - heute'} subheading={'M.Sc. Business Intelligence & Data Science, International School of Management, Köln'}>
                 Schwerpunkte: Datenanalyse, IT-Management und digitale Prozessoptimierung
               </TimelineItem>
-              <TimelineItem heading={'09.2019 - 10.2024'} subheading={'B.A. Business Administration, International School of Management, Köln'}>
+              <TimelineItem heading={'09.2019 - 12.2024'} subheading={'B.A. Business Administration, International School of Management, Köln'}>
                 Schwerpunkte: Internationale Rechnungslegung, Controlling und Unternehmensführung<br />
                 Thesis: <i>„Einfluss von KI-gestützten Anwendungen bei Veränderungsprozessen in Unternehmen“</i>
               </TimelineItem>
