@@ -66,9 +66,14 @@ export default function Home() {
   return (
     <main className="max-w-8xl container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-12">
-
         <div className="bg-gray-100 p-5 text-left md:col-span-4 lg:p-14 dark:bg-gray-900">
-          <h1 className="leading-tighter mt-5 text-4xl font-extrabold lg:text-6xl print:text-2xl">
+          <section className='flex justify-end space-x-2 print:hidden md:hidden'>
+            <button onClick={() => handleThemeChange('light')} title='Dark'><FaSun className='text-gray-900 dark:text-gray-100' /></button>
+            <button onClick={() => handleThemeChange('dark')} title='Light'><FaMoon className='text-gray-900 dark:text-gray-100' /></button>
+            <button onClick={() => handleThemeChange('system')} title='System'><FaGear className='text-gray-900 dark:text-gray-100' /></button>
+          </section>
+
+          <h1 className="leading-tighter mt-1 md:mt-5 text-4xl font-extrabold lg:text-6xl print:text-2xl">
             Marcel Breuer
           </h1>
           <p className="mt-3 text-xl text-green-600 dark:text-green-500 print:hidden">
@@ -84,7 +89,7 @@ export default function Home() {
         </div>
 
         <div className="mx-auto max-w-2xl space-y-8 p-5 md:col-span-8 md:p-10 print:max-w-max">
-          <section className='flex justify-end space-x-2 print:hidden'>
+          <section className='flex justify-end space-x-2 print:hidden hidden md:block'>
             <button onClick={() => handleThemeChange('light')} title='Dark'><FaSun className='text-gray-900 dark:text-gray-100' /></button>
             <button onClick={() => handleThemeChange('dark')} title='Light'><FaMoon className='text-gray-900 dark:text-gray-100' /></button>
             <button onClick={() => handleThemeChange('system')} title='System'><FaGear className='text-gray-900 dark:text-gray-100' /></button>
