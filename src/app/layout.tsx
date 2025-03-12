@@ -13,7 +13,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="de">
-      <body className="antialiased">
+      <body className="bg-white text-gray-900 antialiased dark:bg-gray-900 dark:text-gray-100">
         {children}
       </body>
     </html>
