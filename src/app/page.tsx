@@ -68,8 +68,8 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-12">
         <div className="bg-gray-100 p-5 text-left md:col-span-4 lg:p-14 dark:bg-gray-900">
           <section className='flex justify-end space-x-2 print:hidden md:hidden'>
-            <button onClick={() => handleThemeChange('light')} title='Dark'><FaSun className='text-gray-900 dark:text-gray-100' /></button>
-            <button onClick={() => handleThemeChange('dark')} title='Light'><FaMoon className='text-gray-900 dark:text-gray-100' /></button>
+            <button onClick={() => handleThemeChange('light')} title='Dark'><FaSun className='text-green-600 dark:text-gray-100' /></button>
+            <button onClick={() => handleThemeChange('dark')} title='Light'><FaMoon className='text-gray-900 dark:text-green-600' /></button>
             <button onClick={() => handleThemeChange('system')} title='System'><FaGear className='text-gray-900 dark:text-gray-100' /></button>
           </section>
 
@@ -84,14 +84,16 @@ export default function Home() {
           </div>
 
           <div className="print:hidden">
-            &copy; Marcel Breuer {new Date().getFullYear()}
+            <p className="font-semibold text-sm">
+              &copy; Marcel Breuer {new Date().getFullYear()}
+            </p>
           </div>
         </div>
 
         <div className="mx-auto max-w-2xl space-y-8 p-5 md:col-span-8 md:p-10 print:max-w-max">
-          <section className='flex justify-end space-x-2 print:hidden hidden md:block'>
-            <button onClick={() => handleThemeChange('light')} title='Dark'><FaSun className='text-gray-900 dark:text-gray-100' /></button>
-            <button onClick={() => handleThemeChange('dark')} title='Light'><FaMoon className='text-gray-900 dark:text-gray-100' /></button>
+          <section className='justify-end space-x-2 print:hidden hidden md:flex'>
+            <button onClick={() => handleThemeChange('light')} title='Dark'><FaSun className='text-green-600 dark:text-gray-100' /></button>
+            <button onClick={() => handleThemeChange('dark')} title='Light'><FaMoon className='text-gray-900 dark:text-green-600' /></button>
             <button onClick={() => handleThemeChange('system')} title='System'><FaGear className='text-gray-900 dark:text-gray-100' /></button>
           </section>
 
@@ -170,14 +172,14 @@ export default function Home() {
             <div className='flex gap-8'>
               <div className='flex gap-2'>
                 <FaLinkedin className="size-6 text-black dark:text-white" />
-                <a href="https://www.linkedin.com/in/m-breuer/" target='_blank' className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75">
+                <a href="https://www.linkedin.com/in/m-breuer/" target='_blank' className="truncate font-medium text-black underline hover:text-green-600 dark:text-white dark:hover:text-green-600">
                   LinkedIn
                 </a>
               </div>
 
               <div className='flex gap-2'>
                 <FaGithub className="size-6 text-black dark:text-white" />
-                <a href="https://github.com/breuermarcel/" target='_blank' className="truncate font-medium text-black underline hover:text-black/75 dark:text-white dark:hover:text-white/75">
+                <a href="https://github.com/breuermarcel/" target='_blank' className="truncate font-medium text-black underline hover:text-green-600 dark:text-white dark:hover:text-green-600">
                   GitHub
                 </a>
               </div>
