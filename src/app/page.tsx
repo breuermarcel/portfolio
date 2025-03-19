@@ -118,7 +118,7 @@ export default function Home () {
             </button>
           </section>
 
-          <section className='!mt-0'>
+          <section className='!mt-0' id='work-experience'>
             <Headline>Berufliche Tätigkeit</Headline>
             <Timeline>
               <TimelineItem
@@ -129,25 +129,27 @@ export default function Home () {
               >
                 <ul className='ms-4 list-inside list-disc'>
                   <li>
-                    Projektleitung und Entwicklung einer B2B-Plattformlösung mit
-                    über 25.000 Kunden zur Förderung der Nachhaltigkeit entlang
-                    der gesamten Wertschöpfungskette
+                    Strategische Leitung und Koordination der Entwicklung einer
+                    B2B-Plattform mit{' '}
+                    <span className='inline-block'>&gt; 25.000</span> aktiven
+                    Kunden zur Förderung nachhaltiger Chemikaliennutzung in der
+                    Textil- und Lederindustrie
                   </li>
                   <li>
-                    Verantwortlich für die Leitung funktionsübergreifender Teams
+                    Führung funktionsübergreifender, internationaler Teams und
+                    direkte Zusammenarbeit mit Geschäftsleitung und Stakeholdern
                   </li>
                   <li>
-                    Identifikation, Bewertung und Management von Projektrisiken
-                    sowie Einleitung von Eskalationsstufen
+                    Risiko- und Eskalationsmanagement zur Sicherstellung von
+                    Projektzielen und Meilensteinen
                   </li>
                   <li>
-                    Entwicklung einer KPI-gesteuerten Reportinglösung zur
-                    Transparenz und Effizienzsteigerung
+                    Verantwortung für Projektplanung, Fortschrittskontrolle und
+                    Reporting an das Management
                   </li>
                   <li>
-                    Enge Zusammenarbeit mit der Geschäftsführung sowie
-                    Stakeholdern zur Sicherstellung der Zielerreichung und
-                    Strategie
+                    Sicherstellung höchster Qualitätsstandards und Compliance
+                    mit der Unternehmens-Datenstrategie
                   </li>
                 </ul>
               </TimelineItem>
