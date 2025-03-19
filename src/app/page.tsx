@@ -230,6 +230,7 @@ export default function Home () {
                 <ul className='ms-4 list-inside list-disc'>
                   <li>Jira</li>
                   <li>Confluence</li>
+                  <li>Salesforce</li>
                   <li>Git</li>
                   <li>Docker</li>
                 </ul>
