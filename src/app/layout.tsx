@@ -1,13 +1,13 @@
-import "./globals.css";
-import { ReactNode } from "react";
+import './globals.css'
+import { ReactNode } from 'react'
 
 export const metadata = {
-  title: "Marcel Breuer | Curriculum Vitae",
-  description: "IT-Manager, Business Intelligence Expert, Data Scientist",
-};
+  title: 'Marcel Breuer | Curriculum Vitae',
+  description: 'IT-Manager, Business Intelligence Expert, Data Scientist',
+}
 
 interface RootLayoutProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -17,5 +17,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {children}
       </body>
     </html>
-  );
+  )
 }
