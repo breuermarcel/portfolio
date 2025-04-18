@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://cv.marcel-breuer.net',
+    siteUrl: 'https://marcel-breuer.net',
     generateRobotsTxt: true,
     robotsTxtOptions: {
         policies: [
